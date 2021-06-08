@@ -1,0 +1,511 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+}
+a{
+    color:inherit;
+    text-decoration: none;
+}
+.mobile{
+    float: right;
+    display: none;
+    color: white;
+    padding: 25px 20px;
+    background-color: rgb(25, 129, 129);
+}
+.mobile:hover{
+    cursor: pointer;
+}
+#check {
+    display:none;
+}
+.select{
+    background-color: rgba(213, 214, 214, 0.596);
+    font-weight: bold;
+}
+@media (max-width: 1000px){
+    .mobile{
+        display: block;
+    }
+    header ul{
+        display: none;
+    }
+    header h1{
+        padding: 0;
+    }
+    .info p{
+        text-align: center;
+    }
+}
+@media (max-width: 410px){
+    header{
+        align-items: center;
+    }
+    .medsos h5{
+        font-size: 10px;
+    }
+    header img{
+        display: none;
+    }
+    header h1{
+        text-align: center;
+        font-size: 20px;
+    }
+    .mobile{
+        margin-top: 3px;
+        padding: 15px;
+    }
+    .banner{
+        font-size: 10px;
+    }
+    video{
+        width: 320px;
+    }
+}
+.sidebar{
+    position: fixed;
+    left: 0;
+    top: -500px;
+    bottom: auto;
+    width: 200px;
+    background-color: rgba(25, 129, 129, 0.9);
+    z-index: 999;
+}
+.sidebar ul li:hover{
+    color: rgb(255, 183, 0);
+}
+.sidebar ul li{
+    color: white;
+    text-align: center;
+    padding: 15px;
+    transition: 0.1s;
+}
+.sidebar h3{
+    text-align: center;
+    color:white;
+    padding-bottom: 20px;
+}
+.img-logo-side{
+    width: 100px;
+    padding: 20px 25%;
+    position: relative;
+}
+#check:checked ~ .sidebar{
+    top: 0;
+    transition: 1s;
+}
+#check ~ .sidebar{
+    top: -500;
+    transition: 1s;
+}
+.medsos{
+    padding:5px 15px 5px;
+    background-color: rgb(25, 129, 129);
+}
+.medsos a:hover{
+    color:lightgreen;
+}
+.medsos ul li{
+    display:inline-block;
+    color:white;
+    margin-right:10px;
+}
+.img-medsos{
+    width: 30px;
+    padding: 0;
+}
+.container{
+    width:90%;
+    margin:0 auto;
+}
+.container::after {
+    content:'';
+    display: block;
+    clear: both;
+}
+.container h5{
+    color: white;
+    float: right;
+    padding: 10px;
+    font-style: oblique;
+}
+.img-logo{
+    float: left;
+    width: 50px;
+    padding: 8px 10px 0px;
+}
+header h1{
+    float: left;
+    padding: 15px 0;
+    color: rgb(25, 129, 129);
+    text-shadow: 2px 2px 2px rgba(60, 60, 60, 0.419);
+}
+header h1:hover{
+    color: rgb(255, 183, 0);
+    transition: 0.5s;
+}
+header ul{
+    float: right;
+}
+header ul li{
+    display: inline-block;
+}
+header ul li a{
+    padding: 25px 20px;
+    display: inline-block;
+}
+header ul{
+    color: rgb(25, 129, 129);
+}
+header ul li a:hover{
+    color: rgb(255, 183, 0);
+    border-radius: 20px;
+}
+.active{
+    background-color: rgb(25, 129, 129);
+    color: white;
+    font-weight: bold;
+}
+.banner{
+    height: 600px;
+    border: 1px solid rgb(25, 129, 129);
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(25, 129, 129, 0.6);
+}
+.banner h2{
+    text-align: center;
+    color: white;
+    z-index: 1;
+    padding: 20px 25px;
+    border: 3px solid white;
+    text-shadow: 4px 4px 4px rgba(60, 60, 60, 0.419);
+}
+.banner h2:hover{
+    color: rgb(187, 255, 0);
+    transition: 1s;
+}
+.label{
+    padding: 5px 20px;
+    background-color: rgb(25, 129, 129);
+    color: white;
+}
+section h3{
+    color: rgb(25, 129, 129);
+    text-align: center;
+}
+.info{
+    margin: 90px;
+    margin-top: -120px;
+    padding: 20px 0;
+    z-index: 1;
+    color: rgb(25, 129, 129);
+    background-color: rgb(208, 208, 208) ;
+    border-radius: 5px;
+}
+.info img{
+    width: 200px;
+}
+.info h3{
+    text-align: left;
+    padding-bottom: 20px;
+    color: rgba(25, 129, 129, 1);
+}
+.info p{
+    text-align: justify;
+}
+.about{
+    margin: 90px;
+    margin-top: 90px;
+    padding: 20px 0;
+    z-index: 1;
+    color: rgb(25, 129, 129);
+    background-color: rgb(208, 208, 208) ;
+    border-radius: 5px;
+}
+.about h3{
+    text-align: left;
+    padding-bottom: 20px;
+    color: rgba(25, 129, 129, 1);
+}
+.about video{
+    width: 40%;
+}
+.content{
+    width: 90%;
+    margin: auto 60px;
+    margin-top: -40px;
+    padding-top: 10px;
+    z-index: 1;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.flex-item{
+    padding: 10px;
+    flex: 50%;
+    margin: 5px;
+    border-radius: 15px;
+    color: white;
+    font-size: 10pt;
+}
+.flex-item h2{
+    border: 0;
+}
+.flex-item p{
+    padding-bottom: 10px;
+    font-size: 14pt;
+    font-weight: bold;
+}
+.flex-item:hover{
+    background-color: rgb(255, 183, 0);
+}
+.flex-color1{background-color: rgb(181, 68, 68);}
+.flex-color2{background-color: rgb(85, 80, 163);}
+.flex-color3{background-color: rgb(167, 71, 122);}
+.flex-color4{background-color: rgb(169, 194, 78);}
+@media (max-width : 410px){
+    .flex-container{
+        flex-direction: column;
+        margin-top: -40px;
+    }
+    .flex-item{
+        padding: 20px;
+        margin: 10px;
+        border-radius: 15px;
+        color: white;
+        font-size: 10pt;
+        height: 0;
+    }
+    .kirim h3{
+        font-size: 12px;padding-left: 95px;
+    }
+    .content{
+        width: 90%;
+        margin: auto 225px;
+    }
+    .content h3{
+        font-size: 15px;
+    }
+    .content2{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        margin-right: 0;
+    }
+    .content2 h3{
+        text-align: inherit;
+    }
+    .back a{
+        font-size: 12px;
+    }
+    .banner{
+        overflow-y:auto;
+        height: inherit;
+    }
+    .banner h2{
+        margin: 200px 0px;
+    }
+    .info{
+        margin: 40px;
+    }
+    .info img{
+        width: 40%;
+    }
+    .about{
+        margin: 40px;
+        margin-top: -5px;
+    }
+    .error{
+        width: 100%;
+        padding: 10px;
+        margin: 20px;
+        text-align: center;
+    }
+}
+@media (max-width:850px){
+    .data{
+        overflow-x: scroll;
+    }
+    .info{
+        margin-top: 5px;
+        width: 100%;
+    }
+    .about video{
+        width: 80%;
+    }
+}
+.button-add{
+    background-color: darkgreen;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: inline-flex;
+    font-size: 14px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.button1{
+    background-color: darkgreen;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: inline-flex;
+    font-size: 14px;
+    margin: 4px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.button2{
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: inline-flex;
+    font-size: 14px;
+    margin: 4px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+table{
+    margin-right: 10px;
+}
+#mahasiswa{
+    margin: 8px;
+    border-collapse: collapse;
+    width: 100%;
+}
+#mahasiswa tr{
+    background-color: rgba(25, 129, 129, 0.884);
+}
+#mahasiswa td, #mahasiswa th{
+    padding: 8px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(252, 252, 252, 0.568);
+}
+#mahasiswa td{
+    text-align: center;
+    color: white;
+}
+#mahasiswa th{
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(3, 74, 74);
+    color: white;
+}
+#mahasiswa tr:nth-child(even){
+    background-color: rgba(1, 179, 146, 0.468);
+}
+.back{
+    font-style: normal;
+    font-size: 15px;
+    padding-top: 2px;
+}
+.back:hover{
+    color: yellow;
+}
+.error{
+    z-index: 1;
+    color: white;
+    border-radius: 10px;
+    background-color: rgba(211, 42, 42, 0.808);
+    padding: 20px;
+}
+.content2{
+    width: 60%;
+    margin: auto 50px;
+    padding-top: 10px;
+    z-index: 1;
+}
+.form-add{
+    margin: 0;
+    border-radius: 5px;
+    background-color: rgba(208, 208, 208, 0.426);
+    padding: 10px;
+    color: rgb(41, 41, 41)
+}
+label{
+    font-weight: bold;
+    padding: 2px;
+}
+input[type=text],
+input[type=number],
+input[type=file],
+input[type=date],
+select{
+    width: 100%;
+    padding: 8px;
+    margin: 15px 0 15px 0;
+    border: 1px solid rgba(213, 214, 214, 0.596);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input[type=submit]:hover{
+    background-color: darkgreen;
+}
+input[type=submit]{
+    width: 100%;
+    background-color: green;
+    color: white;
+    margin: 10px auto;
+    padding: 10px;
+}
+form h3{
+    background-color: green;
+    color: white;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+textarea{
+    width: 100%;
+    margin: 10px 0 10px 0;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid rgba(213, 214, 214, 0.596);
+    padding-top: 5px;
+    text-align: center;
+}
+input[type=radio]{
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+}
+input[type=file]{
+    border: 0;
+    margin: 5px
+}
+section{
+    padding: 50px 0;
+}
+footer{
+    padding: 15px 0;
+    color: white;
+    background-color:darkslategray;
+    text-align: center;
+}

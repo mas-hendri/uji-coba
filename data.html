@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- membuat judul -->
+    <title>Tugas Membuat Website</title>
+    <!-- mengaitkan css -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!-- icon Website -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- membuat konten medsos -->
+    <div class="medsos">
+        <div class="container">
+            <ul>
+                <li><a href="https://www.facebook.com/UniversitasMegouPak" target="_blank"><img class="img-medsos"
+                            src="img/fb.png"></a></li>
+                <li><a href="https://www.instagram.com/umptbofficial/" target="_blank"><img class="img-medsos"
+                            src="img/ig.png"></a></li>
+                <li><a href="https://wa.me/+6282282879385" target="_blank"><img class="img-medsos" src="img/wa.png"></a>
+                </li>
+                <h5>Email : umptb@gmail.com</h5>
+            </ul>
+        </div>
+    </div>
+    <!-- membuat header -->
+    <header>
+        <div class="container">
+            <img class="img-logo" src="img/logo.png" alt="">
+            <h1><a href="index.html">UNIVERSITAS MEGOU PAK</a></h1>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li class="active"><a href="data.html">Data</a></li>
+                <li><a href="info.html">Info</a></li>
+                <li><a href="about.html">Tentang</a></li>
+            </ul>
+            <!-- menu mobile -->
+            <label for="check" class="mobile"><strong>Menu</strong></label>
+        </div>
+    </header>
+    <!-- sidebar -->
+    <input type="checkbox" id="check">
+    <div class="sidebar">
+        <img class="img-logo-side" src="img/logo.png">
+        <h3>UMPTB</h3>
+        <hr>
+        <br>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li class="select"><a href="data.html">Data</a></li>
+            <li><a href="info.html">Info</a></li>
+            <li><a href="about.html">Tentang</a></li>
+        </ul>
+        <br>
+        <hr>
+    </div>
+    <!-- label -->
+    <section class="label">
+        <div class="container">
+            <h6>Beranda / Data</h6>
+        </div>
+    </section>
+    <!-- membuat data -->
+    <section class="banner">
+        <section class="content">
+            <div class="flex-container">
+                <div class="flex-item flex-color1">
+                    <a href="error.html">
+                    <img style="width: 40px; height: 40px;" src="img/dosen.png">
+                    <h3 style="font-size: 20px; padding: 8px; color: yellow;">100</h3>
+                    <p style="font-size: 14px; padding-bottom: 4px;">Dosen</p>
+                    </a>
+                </div>
+                <div class="flex-item flex-color2">
+                    <a href="error.html">
+                    <img style="width: 40px;" src="img/mahasiswa.png">
+                    <h3 style="font-size: 20px; padding: 8px; color: yellow;">***</h3>
+                    <p style="font-size: 14px; padding-bottom: 4px;">Mahasiswa</p>
+                    </a>
+                </div>
+                <div class="flex-item flex-color3">
+                    <a href="error.html">
+                    <img style="width: 40px;" src="img/fakultas.png">
+                    <h3 style="font-size: 20px; padding: 8px; color: yellow;">***</h3>
+                    <p style="font-size: 14px; padding-bottom: 4px;">Fakultas</p>
+                    </a>
+                </div>
+                <div class="flex-item flex-color4">
+                    <a href="error.html">
+                    <img style="width: 40px;" src="img/partner.png">
+                    <h3 style="font-size: 20px; padding: 8px; color: yellow;">***</h3>
+                    <p style="font-size: 14px; padding-bottom: 4px;">Partner</p>
+                    </a>
+                </div>
+            </div>
+            <!-- tambah data -->
+            <div>
+                <button class="button-add">
+                    <a href="tambahdata.html">Tambah Data</a>
+                </button>
+            </div>
+            <!-- tabel -->
+            <h3 style="margin-top: 15px; margin-left: 10px; float: left; color: white;">Tabel Mahasiswa</h3>
+            <div class="data" style="width: 99%;">
+                <table id="mahasiswa">
+                    <tr>
+                        <th>No</th>
+                        <th>Foto</th>
+                        <th>NIM</th>
+                        <th>Nama</th>
+                        <th>Nilai</th>
+                        <th>Grade</th>
+                        <th>Tindakan</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><img src="img/avatar.png" width="50"></td>
+                        <td>000000000</td>
+                        <td>Andi Aprian</td>
+                        <td>78</td>
+                        <td>B</td>
+                        <td>
+                            <button class="button1">
+                                <a href="error.html">Ubah</a>
+                            </button>
+                            <button class="button2">
+                                <a href="error.html">Hapus</a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><img src="img/avatar.png" width="50"></td>
+                        <td>000000000</td>
+                        <td>Amri Adiansyah</td>
+                        <td>92</td>
+                        <td>A</td>
+                        <td>
+                            <button class="button1">
+                                <a href="error.html">Ubah</a>
+                            </button>
+                            <button class="button2">
+                                <a href="error.html">Hapus</a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><img src="img/avatar.png" width="50"></td>
+                        <td>000000000</td>
+                        <td>Budi Raharza</td>
+                        <td>55</td>
+                        <td>D</td>
+                        <td>
+                            <button class="button1">
+                                <a href="error.html">Ubah</a>
+                            </button>
+                            <button class="button2">
+                                <a href="error.html">Hapus</a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><img src="img/avatar.png" width="50"></td>
+                        <td>000000000</td>
+                        <td>Dika Suryandika</td>
+                        <td>68</td>
+                        <td>C</td>
+                        <td>
+                            <button class="button1">
+                                <a href="error.html">Ubah</a>
+                            </button>
+                            <button class="button2">
+                                <a href="error.html">Hapus</a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><img src="img/avatar.png" width="50"></td>
+                        <td>000000000</td>
+                        <td>Fikri Andi Mahesa</td>
+                        <td>50</td>
+                        <td>E</td>
+                        <td>
+                            <button class="button1">
+                                <a href="error.html">Ubah</a>
+                            </button>
+                            <button class="button2">
+                                <a href="error.html">Hapus</a>
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </section>
+    <!-- membuat footer -->
+    <footer>
+        <div class="container">
+            <h6>
+                Copyright &copy; 2021 - UMPTB. Tugas Membuat Website
+            </h6>
+        </div>
+    </footer>
+</body>
+
+</html>
